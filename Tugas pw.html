@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbok 2</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            height: 100vh;
+            flex-wrap: wrap;
+        }
+
+        nav {
+            color: black;
+            background-color: #1640D6;
+            padding: 10px;
+            height: 100vh;
+        }
+
+        header {
+            color: black;
+            background-color: #E7B10A;
+            padding: 10px;
+            text-align: center;
+            flex: 3;
+
+        }
+
+        main {
+            display: flex;
+            flex: 1;
+        }
+
+        article {
+            background-color: blueviolet;
+            padding: 10px;
+            width: 100vh;
+            flex: 3;
+        }
+
+        aside {
+            color: black;
+            background-color: #B31312;
+            padding: 10px;
+            height: 70vh;
+            flex: 1;
+        }
+
+        footer {
+            color: black;
+            background-color: #B2533E;
+            padding: 10px;
+            text-align: center;
+            flex: 3;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <nav>Nav</nav>
+        <header>Header</header>
+        <main>
+            <article>Article</article>
+            <aside>Aside</aside>
+        </main>
+        <footer>Footer</footer>
+    </div>
+</body>
+
+</html>
