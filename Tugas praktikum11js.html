@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menghitung Jumlah Dua Bilangan</title>
+</head>
+<body>
+    <h1>Menghitung Jumlah Dua Bilangan</h1>
+    <label for="angka1"></label>
+    <input type="number" name="angka1" id="angka1" placeholder="Masukan angka pertama" onchange="penJumlahan()">
+    <br/>
+
+    <span class="operator-icon">+</span>
+     
+    <br/>
+    <label for="angka2"></label>
+    <input type="number" name="angka2" id="angka2" placeholder="Masukan angka kedua" onchange="penJumlahan()">
+     
+    <br/>
+    <span class="operator-icon">=</span>
+    <span class id="hasil"></span>
+
+    <script>
+        function penJumlahan() {
+            var angka1 = parseFloat(document.getElementById("angka1").value) || 0;
+            var angka2 = parseFloat(document.getElementById("angka2").value) || 0;
+
+            var hasil = angka1 + angka2
+
+            document.getElementById("hasil").innerText = hasil
+        }
+    </script>
+</body>
+</html>
